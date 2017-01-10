@@ -1,0 +1,9 @@
+<div class="category-content" *ngFor="let categoryDate of categoryDates">
+    <h3 class="color-black font-tillana">{{categoryDate.dateYear}}</h3>
+    <ul>
+        <li *ngFor="let blog of categoryDate.blogList" class="font-common inner-space-two">
+            <span class="font-yahei outer-space-right-ten">{{blog.publishDate}}</span>
+            <a class="color-black font-tillana font-not-large" [routerLink]="['/show-blog',blog.blogId]">{{blog.title}}</a>
+        </li>
+    </ul>
+</div>

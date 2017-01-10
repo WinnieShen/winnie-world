@@ -1,0 +1,13 @@
+<div id="base-wrap">
+    <div class="container center">
+        <ul class="polaroids">
+            <li *ngFor="let photo of photos" ><a title="{{photo.description}}"><img src="{{photo.photoPath}}"></a></li>
+        </ul>
+    </div>
+</div>
+<div class="tag-personal-page">
+    <a routerLink="/">返回个人主页</a>
+</div>
+<div class="panel-footer center font-josefin-sans" id="footer-module">
+    Copyright © 2016: Winnie Shen.
+</div>

@@ -1,0 +1,11 @@
+.bg-img{
+    background:url("../images/1985-bg.png") 0 0 no-repeat;
+    height: 300px;
+}
+header{
+    margin-top: 40px;
+    color: #fff;
+}
+.heading{
+    /*font-size: 48px;*/
+}

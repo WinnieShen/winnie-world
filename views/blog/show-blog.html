@@ -1,0 +1,12 @@
+<article class="blog-content">
+    <h3><a class="color-black-hover-grey no-underline font-tillana">{{article.title}}</a></h3>
+    <div class="font-common">
+        <label class="color-gray">{{article.publishDate}}</label>
+        <a class="comments-number no-underline color-grey">
+            <span class="glyphicon glyphicon-comment"></span>{{article.commentNum}}条评论
+        </a>
+    </div>
+    <div class="blog-real-content" [innerHtml]="article.content">
+
+    </div>
+</article>

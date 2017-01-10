@@ -1,0 +1,61 @@
+<div id="base-wrap">
+    <div id="big-view" class="container center">
+        <div class="heading-content">
+            <div class="font-candal heading-words">
+                Winnie Shen
+            </div>
+            <div class="font-indie-flower heading-description">
+                Blog · Information · Photos · Music
+            </div>
+        </div>
+        <div class="nav-list">
+            <a *ngFor="let itemLink of itemLinks" routerLink="{{itemLink.link}}" class="color-black-hover-grey no-underline circle-div center" id="resource">
+                <img class="circle-img" src="{{itemLink.picPath}}">
+                <div class="description">{{itemLink.title}}</div>
+            </a>
+            <div class="clr"></div>
+        </div>
+    </div>
+    <div id="little-view" class="container top-space">
+        <div class="center">
+            <div class="img-background">
+                <img class="personal-img" src="{{userInfo.photoPath}}" />
+            </div>
+            <span class="nic-name">Winnie</span><br/>
+            <span class="glyphicon glyphicon-map-marker" style="color: #EEEEEE;"></span><span style="color: #EEEEEE;">Shanghai</span>
+        </div>
+        <div class="data-information">
+            <div class="items-info center">
+                <div class="numbers">{{userInfo.flowerNum}}</div>
+                <div class="items-content">Flowers</div>
+            </div>
+            <div class="items-info center">
+                <div class="numbers">{{userInfo.followingNum}}</div>
+                <div class="items-content">Following</div>
+            </div>
+            <div class="items-info center">
+                <div class="numbers">{{userInfo.friendsNum}}</div>
+                <div class="items-content">Friends</div>
+            </div>
+            <div class="clr"></div>
+        </div>
+        <div class="item-title">
+            <span class="glyphicon glyphicon-th-list"></span>My options
+        </div>
+        <div class="page-items" *ngFor="let itemLink of itemLinks">
+            <div class="wavy-line"></div>
+            <a routerLink="{{itemLink.link}}" class="item-real-content">
+                <img src="{{itemLink.picPath}}">
+                <div class="item-description">
+                    <div class="item-description-title">{{itemLink.title}}</div>
+                    <div class="item-description-content">{{itemLink.description}}</div>
+                </div>
+            </a>
+            <div class="wavy-line right"></div>
+            <div class="clr"></div>
+        </div>
+    </div>
+</div>
+<div class="panel-footer center font-josefin-sans" id="footer-module">
+    Copyright © 2016: Winnie Shen.
+</div>

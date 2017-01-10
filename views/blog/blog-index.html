@@ -1,0 +1,13 @@
+<article class="blog-content" *ngFor="let blog of blogs">
+    <h3><a class="color-black-hover-grey no-underline font-tillana" [routerLink]="['/blog/show-blog',blog.id]">{{blog.title}}</a></h3>
+    <div class="font-common">
+        <label class="color-gray">{{blog.publishDate}}</label>
+        <a class="comments-number no-underline color-grey" [routerLink]="['/blog/show-blog',blog.id]">
+            <span class="glyphicon glyphicon-comment"></span>{{blog.commentNum}}条评论
+        </a>
+    </div>
+    <div class="blog-real-content">
+        {{blog.introduction}}
+    </div>
+    <a class="btn btn-default read-more" [routerLink]="['/blog/show-blog',blog.id]">Read More>></a>
+</article>

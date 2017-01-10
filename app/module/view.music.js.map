@@ -1,0 +1,1 @@
+{"version":3,"file":"view.music.js","sourceRoot":"","sources":["view.music.ts"],"names":[],"mappings":";;;;;;;;;;AAAA,qBAAkC,eAAe,CAAC,CAAA;AAQlD;IACI;IAAgB,CAAC;IACjB,iCAAQ,GAAR;IACA,CAAC;;IATL;QAAC,gBAAS,CAAC;YACP,QAAQ,EAAE,iBAAiB;YAC3B,WAAW,EAAC,8BAA8B;YAC1C,SAAS,EAAE,CAAC,qBAAqB,CAAC;SACrC,CAAC;;sBAAA;IAMF,qBAAC;AAAD,CAAC,AAJD,IAIC;AAJY,sBAAc,iBAI1B,CAAA"}
