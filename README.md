@@ -3,7 +3,7 @@ This is my personal pages using AngularJs2
 
 Please install nodejs first if you want to see this projects.
 
-##Steps are:
+## Steps are:
 
 1.Start->start cmd.exe ->use your directory of this project(command is :cd C:/...)
 
